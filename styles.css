@@ -1,0 +1,105 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo{
+    margin-right: 50px;
+}
+
+.navclass{
+    text-decoration: none;
+    padding: 10px;
+    width: 115px;
+    height: 25px;
+    background: #4E9CAF;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+nav{
+    display: flex;
+}
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.hero {
+    text-align: center;
+    margin-top: 50px;
+}
+.desp{
+    margin-top: 10px;
+}
+
+.btn {
+    margin-top: 25px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Courses Section */
+.courses {
+    padding: 50px;
+}
+
+.course-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.course-card {
+    width: calc(33.33% - 20px);
+    background-color: #fff;
+    padding: 20px;
+    margin-left: 10px;
+    /* margin-bottom: 20px; */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* About and Contact Sections */
+.about, .contact {
+    text-align: center;
+    padding: 50px;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+@media only screen and (max-width: 600px) {
+    .course-cards{
+        display: flex;
+        flex-direction: column;
+    }
+    .course-card{
+        width: 90%;
+        margin-top: 25px;
+        margin-left: 16px;
+    }
+  }
